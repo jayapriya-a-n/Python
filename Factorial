@@ -1,0 +1,5 @@
+#Write a program to find a factorial of first 10 odd numbers
+fact=1
+num=input#
+n=int(input("Enter number "))
+while n<=num

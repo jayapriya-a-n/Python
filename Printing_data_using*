@@ -1,0 +1,6 @@
+#8
+
+rows=int(input("Enter number of rows"))
+a="*"
+for i in range (rows+1):
+    print(a*i)

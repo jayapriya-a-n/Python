@@ -1,0 +1,7 @@
+lis=[12,15,18,20]
+del lis[2] #delete data at pos2
+print(lis)
+lis.insert(2,11) #insert data at pos2
+print(lis)
+lis.remove(15)#remove element 15 if present in the list
+print(lis)

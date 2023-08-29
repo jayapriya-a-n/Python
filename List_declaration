@@ -1,0 +1,5 @@
+#declaration of list using sq brackets
+lis=['jaya','rahu','tee','peeks']
+print(type(lis))
+print(lis)
+print(len(lis)) # finding the length using len

@@ -1,0 +1,8 @@
+#tuple to list and list to tuple
+
+x=("hubli","belgaum","blore")
+print(x)
+y=list(x)
+y[2]="mumbaai"
+x=tuple(y)
+print(x)

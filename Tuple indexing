@@ -1,0 +1,5 @@
+#tuple indexing
+y=tuple6.index(1)
+print(y)
+z=tuple6.count(1)
+print(z)

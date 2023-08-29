@@ -1,0 +1,8 @@
+#accessing elements of the list
+e= lis3[2]+lis3[0]
+print(e)
+
+lis1=[]
+c=input()
+lis1.append(c)
+print(lis1)

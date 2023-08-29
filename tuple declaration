@@ -1,0 +1,9 @@
+x=("happy","hippy",23)
+print(type(x))
+y=("jay",'jeps','dfs')
+z=x+y
+print(z)
+
+#tuple declaration using "tuple"
+tuple5=tuple((1,5,3,12))
+print(tuple5)

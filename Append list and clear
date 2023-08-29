@@ -1,0 +1,8 @@
+#appending in a list
+lis3.append('dee')
+print(lis3)
+
+#clearing list lis2
+lis2.clear()
+print(lis3)
+print(lis2)

@@ -1,0 +1,7 @@
+lis4=["jay","dee","tee","shr"]
+lis4.sort(reverse=False) # ascending
+print(lis4)
+
+list1=[1,99,15,18,23]
+list1.sort(reverse=True) #decending
+print(list1)

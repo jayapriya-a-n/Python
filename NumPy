@@ -1,0 +1,40 @@
+#single dimensional array
+import numpy as np
+n1=np.array([10,20,30,40])
+n1
+
+#type of the data
+print(type(n1))
+
+#2-d array
+n2=np.array([[10,20,30,80],[40,50,60,70]])
+n2
+
+print(type(n2))
+
+#initialising numpy array
+#1X2
+n3=np.zeros((1,2))
+n3
+
+#5x5
+n4=np.zeros((5,5))
+n4
+
+#initialising numpy array with some number 
+n1=np.full((2,2),10)
+n1
+
+#initialising numpy array with range 
+n1=np.arange(10,20)#last element 20 isnt included in the array
+n1
+
+#initialising numpy array with range and an increemnt in the range 
+n1=np.arange(10,20,2)#last element 20 isnt included in the array
+n1
+
+#initialising numpy array with random numbers
+
+import random
+n2=np.random.randint(1,100,10)#first two numbers are the range in which you wany the elements in & last umber means the number of elements you want in the array
+n2

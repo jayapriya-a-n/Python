@@ -1,0 +1,64 @@
+x=np.linspace(0,10,100)
+y=np.sin(x)
+plt.plot(x,y)
+plt.show
+fig,ax=plt.subplots()
+ax.plot(x,y,linewidth=3.0)
+
+ax.set(xlim=(0,1),xticks=np.arange(0,9),ylim=(0,9),yticks=np.arange(-1,1))
+plt.show
+
+#scatterplot
+temp=np.array([10,20,30,40,50,60,70,80])
+res=np.array([18472,12185,10000,9850,8520,8603,7602,0])
+plt.scatter(temp,res)
+plt.show
+
+#line graph
+temp=np.array([10,20,30,40,50,60,70,80])
+res=np.array([18472,12185,10000,9850,8520,8603,7602,0])
+plt.plot(temp,res)
+plt.show
+
+#garnishing the graph 
+
+plt.plot(temp,res)
+plt.show
+#resistance point to be marked 
+plt.plot(res,marker="*")
+
+#dotted graph
+plt.plot(res,linestyle="dotted")
+
+#adding labels
+
+plt.plot(temp,res)
+plt.title("thermister characteristics")
+plt.xlabel("temp")
+plt.ylabel("res")
+
+#adding grid to graph 
+plt.plot(temp,res)
+plt.title("thermister characteristics")
+plt.xlabel("temp")
+plt.ylabel("res")
+plt.grid()
+
+#bar chart
+x=np.array([1,2,3,4,5,6,7,8,9])
+y=np.array([10,20,30,40,50,60,70,80,90])
+plt.bar(x,y)
+
+#pie chart
+
+x=np.array([1,2,3,4,5,6,7,8,9])
+y=np.array([10,20,30,40,50,60,70,80,90])
+plt.pie(y)
+
+#histogram
+
+import random
+
+x=np.random.normal(5,1,100000)
+plt.hist(x,1000)
+plt.show

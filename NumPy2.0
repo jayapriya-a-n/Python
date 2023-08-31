@@ -1,0 +1,86 @@
+#to check the shape of the array
+n=np.array([[15,20,15,20],[40,80,40,80],[90,90,90,90]])
+n.shape
+
+#to change the shape of the array
+n.shape=(4,3)
+n
+
+#joining numpy array
+
+#vstack
+n1=np.array([10,20])
+n2=np.array([40,60])
+np.vstack((n1,n2))
+
+#hstack
+n1=np.array([10,20])
+n2=np.array([40,60])
+np.hstack((n1,n2))
+
+#column stack
+n1=np.array([10,20])
+n2=np.array([40,60])
+np.column_stack((n1,n2))
+
+#intersection
+n1=np.array([10,20])
+n2=np.array([20,60])
+np.intersect1d(n1,n2)
+
+#difference
+n1=np.array([10,20])
+n2=np.array([20,60])
+np.setdiff1d(n1,n2)
+
+#difference
+n1=np.array([10,20])
+n2=np.array([20,60])
+np.setdiff1d(n2,n1)
+
+#addition of numpy arrays
+n1=np.array([10,20,40,80,90,100])
+n2=np.array([20,60,40,50,80,90])
+np.sum([n1,n2],axis=0) #sum od rows
+
+n1=np.array([10,20,40,80,90,100])
+n2=np.array([20,60,40,50,80,90])
+np.sum([n1,n2],axis=1) #sum od columns
+
+#basic addition
+n1=np.array([10,20,40,80,90,100])
+n1+=2
+n1
+
+#basic subtraction
+n1=np.array([10,20,40,80,90,100])
+n1-=2
+n1
+
+#basic division
+n1=np.array([10,20,40,80,90,100])
+n1=n1/2
+n1
+
+#basic multiplication
+n1=np.array([10,20,40,80,90,100])
+n1=n1*2
+n1
+
+#mean
+n1=np.array([10,20,40,80,90,100])
+np.mean(n1)
+
+#median
+n1=np.array([10,20,40,80,90,100])
+np.median(n1)
+
+#standard diviation
+n1=np.array([10,20,40,80,90,100])
+np.std(n1)
+
+#saving arrays
+np.save("my_numpy",n1)
+
+n2=np.load("my_numpy.npy")
+n2
